@@ -177,3 +177,14 @@ hr {
 	/* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
 	white-space: nowrap;
 }
+
+#container {
+	position: relative;
+}
+
+#example {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+
+}
