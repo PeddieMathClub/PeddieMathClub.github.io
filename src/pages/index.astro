@@ -9,31 +9,78 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+
+			<!-- The loading of KaTeX is deferred to speed up page rendering -->
+			<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+
+			<!-- To automatically render math in text elements, include the auto-render extension: -->
+			<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
 	</head>
 	<body>
 		<Header />
-		<div id="title">
-			<div id="container">
-				<!-- <img src="/peddiecs.jpg"> -->
-				<!-- <div id="example"> -->
-				<!-- 	 -->
-				<!-- </div> -->
-						</div>
-		</div>
-		<main>
-			<h1>
+		<!-- <div id="title"> -->
+		<!-- 	<div class="imageflex"> -->
+		<!-- 		<h1 class="imageflexcontent"> -->
+		<!-- 			{SITE_TITLE} -->
+		<!-- 		</h1> -->
+		<!-- 		<img src="/logo.svg" id="logoimage" class="imageflexcontent" width="15%"> -->
+		<!-- 	</div> -->
+		<!-- </div> -->
+		<main id="main">
+		<!-- <main style="padding-top: 0px"> -->
+			<h1 class="imageflexcontent">
 				{SITE_TITLE}
 			</h1>
 			<p>
-				Welcome to the Peddie Math Club Page. We are a group of students passionate about spreading the love of mathematics to other people. 
+				Welcome to the Peddie Math Club Website. We are a group of students passionate about spreading the love of mathematics to the Peddie community. 
 			</p>
-			<h2>
+			<h3>
+				Problem of the Week
+			</h3>
+			<ol>
+				<li>{String.raw`
+					(Pre-Calculus) Prove the following by induction:
+					\[ \text{\(n\)th Fibonacci number}=F_n=
+					\frac{\left(1+\sqrt5\right)^n-\left(1-\sqrt5\right)^n}{2^n\sqrt5} \]
+				`}</li>
+			</ol>
+			<h3>
 				Events
-			</h2>
+			</h3>
 			<p>
-				This section will be completed shortly.
+				We plan on holding a multitude of events over the school year. Click on the link to learn more.
+				<ul>
+					<li>The following student presentations:</li>
+					<ul>
+						<li><b>Jerry Liu</b> will present about his mathematical research on TBD</li>
+						<li><b>Jerry Yao</b> will present about his Rubik's Cube career on TBD</li>
+						<li><b>Mark Zhao</b> will host a AP Calculus BC tutorial on TBD</li>
+						<li><b>Jayden Li</b> will host a Pre-Calculus Honors tutorial on TBD</li>
+					</ul>
+					<li><b>Casino Night</b>, a yearly Math Club tradition, on TBD</li>
+					<li>We will have <b>\(\pi\) festival</b> on \(\sqrt[3]2\) day (Jan 25), with the following events:</li>
+					<ul>
+						<li>Pie-eating contest</li>
+						<li>Pi-shape baking - make collab with cooking club to bake p</li>
+						<li>Pi-scavenger hunt - mini scavenger hunts in a roo</li>
+						<li>Pi-games - play fun math games at different locations</li>
+						<li>Pi-lecture - host a small math lecture related to approximation of \(\pi\)</li>
+						<li><i>(Unfortunately, Pi day is during spring break)</i></li>
+					</ul>
+					<!-- <li>STEM Festival - sports day integrated with math, comp sci, and science elements</li> -->
+					<li>Blind date for STEM (Math, CS, Science and Engineering) students</li>
+					<li>Math Bee/Integration Bee on TBD</li>
+					<li>Guest Speaker Presentation on TBD</li>
+					<li>School trip to Princeton to attend fun lectures on TBD</li>
+					<li>Tutoring opportunities, including tutoring at the local elementary school</li>
+					<li>Library tutoring opportunities</li>
+				</ul>
 			</p>
 		</main>
+		<script>
+			// renderMathInElement(document.getElementById("main"));
+		</script>
 		<Footer />
 	</body>
 </html>

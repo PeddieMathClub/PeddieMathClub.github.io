@@ -17,8 +17,8 @@
 }
 
 @font-face {
-	font-family: 'Latin Modern';
-	src: url('/fonts/lmroman12-regular.otf');
+	font-family: 'Computer Modern';
+	src: url('/fonts/cmunrm.ttf');
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
@@ -32,7 +32,7 @@
 /* 	font-display: swap; */
 /* } */
 body {
-	font-family: 'Latin Modern', sans-serif;
+	font-family: "Computer Modern", sans-serif;
 	margin: 0;
 	padding: 0;
 	text-align: left;
@@ -41,8 +41,18 @@ body {
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	color: rgb(var(--gray-dark));
-	font-size: 20px;
-	line-height: 1.7;
+	font-size: 125%;
+	line-height: 1.5;
+}
+
+.katex {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	background-size: 100% 600px;
+	font-size: 100%;
+	font-weight: normal;
+	line-height: 1.6;
 }
 
 main {
@@ -64,7 +74,7 @@ h6 {
 }
 
 h1 {
-	font-size: 3.052em;
+	font-size: 2.752em;
 }
 
 h2 {
@@ -187,4 +197,21 @@ hr {
 	top: 0px;
 	left: 0px;
 
+}
+
+.imageflex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 1em;
+	padding-bottom: 0.2em;
+}
+
+.imageflexcontent {
+	margin-left: 5px;
+	margin-top: 0;
+}
+
+#logoimage {
+	padding-left: 3em;
 }
