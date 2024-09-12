@@ -277,3 +277,7 @@ p.officer-small-margin {
 		/* Center-align items */
 	}
 }
+
+ul {
+	padding-left: 1.2em;
+}

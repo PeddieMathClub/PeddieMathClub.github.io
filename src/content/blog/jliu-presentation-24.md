@@ -2,7 +2,7 @@
 title: '2024 Jerry Liu Research Presentation'
 description: 'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.'
 pubDate: 'Jan 1 1864'
-heroImage: '/blog-placeholder-1.jpg'
+heroImage: '/math-placeholder.jpg'
 ---
 
 Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
