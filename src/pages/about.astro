@@ -112,6 +112,10 @@ import Layout from '../layouts/BlogPost.astro';
 	</style>
 
 	<script>
+		interface Biography {
+			name : string;
+			text : string;
+		}
 		document.addEventListener('DOMContentLoaded', (e) => {
 			const popup = document.getElementById('bioPopup');
 			const bioName = document.getElementById('bioName');
@@ -119,13 +123,13 @@ import Layout from '../layouts/BlogPost.astro';
 			const closeBtn : HTMLElement = document.querySelector('.close-btn') as HTMLElement;
 
 			// Bio data (you can replace this with actual bios)
-			const bios = {
-				koch: { name: "Mr. Koch", text: "Bio for Mr. Koch goes here." },
-				montgomery: { name: "Mrs. Montgomery", text: "Bio for Mrs. Montgomery goes here." },
-				jerry: { name: "Jerry Liu", text: "Bio for Jerry Liu goes here." },
-				mark: { name: "Mark Zhao", text: "Bio for Mark Zhao goes here." },
-				jayden: { name: "Jayden Li", text: "Bio for Jayden Li goes here." }
-			};
+			const bios = new Map<string, Biography>([
+				["koch", { name: "Mr. Koch", text: "Bio for Mr. Koch goes here." }],
+				["montgomery", { name: "Mrs. Montgomery", text: "Bio for Mrs. Montgomery goes here." }],
+				["jerry", { name: "Jerry Liu", text: "Bio for Jerry Liu goes here." }],
+				["mark", { name: "Mark Zhao", text: "Bio for Mark Zhao goes here." }],
+				["jayden", { name: "Jayden Li", text: "Bio for Jayden Li goes here." }],
+			]);
 
 			// Open pop-up when "Read Bio" is clicked
 			document.querySelectorAll('.read-bio').forEach(link => {
@@ -133,8 +137,8 @@ import Layout from '../layouts/BlogPost.astro';
 					e.preventDefault();
 					const thing : HTMLTextAreaElement = e!.target as HTMLTextAreaElement;
 					const bioKey : string = thing.getAttribute('data-bio') as string;
-					bioName!.textContent = bios[bioKey!].name;
-					bioText!.textContent = bios[bioKey!].text;
+					bioName!.textContent = bios.get(bioKey!)!.name;
+					bioText!.textContent = bios.get(bioKey!)!.text;
 					popup!.style.display = 'block';
 				});
 			});
