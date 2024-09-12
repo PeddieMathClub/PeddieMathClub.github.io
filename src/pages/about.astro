@@ -2,12 +2,8 @@
 import Layout from '../layouts/BlogPost.astro';
 ---
 
-<Layout
-	title="About the Math Club"
-	description="Lorem ipsum dolor sit amet"
-	pubDate={new Date('1')}
->	
-	<h3>
+<Layout title="About the Math Club" description="Lorem ipsum dolor sit amet" pubDate={new Date('1')}>
+  	<h3>
 		Mission
 	</h3>
 
@@ -23,50 +19,136 @@ import Layout from '../layouts/BlogPost.astro';
 		If you want to learn more about the organization of our club, click <a href="/constitution">here</a> to read our constitution.
 	</p>
 
-	<h3 id="meetourteam">
-		Meet our Team
-	</h3>
+  <h3 id="meetourteam">Meet our Team</h3>
+  
+  <!-- Team Introduction Section -->
+  <div class="team-container">
+    <div class="team-member-faculty">
+      <img class="team-member-picture" src="/gkoch.jpg" alt="Image of Mr. Koch">
+      <h4 class="officer-small-margin">Mr. Koch</h4>
+      <p class="officer-small-margin">Math Department Chair
+        <br><a href="#" class="read-bio" data-bio="koch">Read Bio</a>
+      </p>
+    </div>
+    <div class="team-member-faculty">
+      <img class="team-member-picture" src="/vmontgomery.jpg" alt="Image of Mrs. Montgomery">
+      <h4 class="officer-small-margin">Mrs. Montgomery</h4>
+      <p class="officer-small-margin">Faculty Advisor
+        <br><a href="#" class="read-bio" data-bio="montgomery">Read Bio</a>
+      </p>
+    </div>
+  </div>
 
-	<!-- Team Introduction Section -->
-	<div class="team-container">
-		<div class="team-member-faculty">
-			<img class="team-member-picture" src="/gkoch.jpg" alt="Image of Mr. Koch">
-			<h4 class="officer-small-margin">Mr. Koch</h4>
-			<p class="officer-small-margin">Math Department Chair
-			<!-- <br><a href="/bio1">Read Bio</a> -->
-			</p>
-		</div>
-		<div class="team-member-faculty">
-			<img class="team-member-picture" src="/vmontgomery.jpg" alt="Image of Mrs. Montgomery">
-			<h4 class="officer-small-margin">Mrs. Montgomery</h4>
-			<p class="officer-small-margin">Faculty Advisor
-			<!-- <br><a href="/bio2">Read Bio</a> -->
-			</p>
-		</div>
-	</div>
+  <div class="team-container">
+    <div class="team-member">
+      <img class="team-member-picture" src="/jliu.jpg" alt="Image of Jerry Liu">
+      <h4 class="officer-small-margin">Jerry Liu</h4>
+      <p class="officer-small-margin">President
+        <br><a href="#" class="read-bio" data-bio="jerry">Read Bio</a>
+      </p>
+    </div>
+    <div class="team-member">
+      <img class="team-member-picture" src="/mzhao.jpg" alt="Image of Mark Zhao">
+      <h4 class="officer-small-margin">Mark Zhao</h4>
+      <p class="officer-small-margin">Vice-President
+        <br><a href="#" class="read-bio" data-bio="mark">Read Bio</a>
+      </p>
+    </div>
+    <div class="team-member">
+      <img class="team-member-picture" src="/jli.png" alt="Image of Jayden Li">
+      <h4 class="officer-small-margin">Jayden Li</h4>
+      <p class="officer-small-margin">Secretary
+        <br><a href="#" class="read-bio" data-bio="jayden">Read Bio</a>
+      </p>
+    </div>
+  </div>
 
+  <!-- Bio pop-up containers -->
+  <div id="bioPopup" class="bio-popup">
+    <div class="bio-content">
+      <span class="close-btn">&times;</span>
+      <h3 id="bioName"></h3>
+      <p id="bioText"></p>
+    </div>
+  </div>
 
-	<div class="team-container">
-		<div class="team-member">
-			<img class="team-member-picture" src="/jliu.jpg" alt="Image of Jerry Liu">
-			<h4 class="officer-small-margin">Jerry Liu</h4>
-			<p class="officer-small-margin">President
-			<!-- <br><a href="/bio1">Read Bio</a> -->
-			</p>
-		</div>
-		<div class="team-member">
-			<img class="team-member-picture" src="/mzhao.jpg" alt="Image of Mark Zhao">
-			<h4 class="officer-small-margin">Mark Zhao</h4>
-			<p class="officer-small-margin">Vice-President
-			<!-- <br><a href="/bio2">Read Bio</a> -->
-			</p>
-		</div>
-		<div class="team-member">
-			<img class="team-member-picture" src="/jli.png" alt="Image of Jayden Li">
-			<h4 class="officer-small-margin">Jayden Li</h4>
-			<p class="officer-small-margin">Secretary
-			<!-- <br><a href="/bio3">Read Bio</a> -->
-			</p>
-		</div>
-	</div>
+  <style>
+    .bio-popup {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.4);
+    }
+
+    .bio-content {
+      background-color: #fefefe;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      max-width: 600px;
+      position: relative;
+    }
+
+    .close-btn {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .close-btn:hover,
+    .close-btn:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      const popup = document.getElementById('bioPopup');
+      const bioName = document.getElementById('bioName');
+      const bioText = document.getElementById('bioText');
+      const closeBtn = document.querySelector('.close-btn');
+
+      // Bio data (you can replace this with actual bios)
+      const bios = {
+        koch: { name: "Mr. Koch", text: "Bio for Mr. Koch goes here." },
+        montgomery: { name: "Mrs. Montgomery", text: "Bio for Mrs. Montgomery goes here." },
+        jerry: { name: "Jerry Liu", text: "Bio for Jerry Liu goes here." },
+        mark: { name: "Mark Zhao", text: "Bio for Mark Zhao goes here." },
+        jayden: { name: "Jayden Li", text: "Bio for Jayden Li goes here." }
+      };
+
+      // Open pop-up when "Read Bio" is clicked
+      document.querySelectorAll('.read-bio').forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          const bioKey = e.target.getAttribute('data-bio');
+          bioName.textContent = bios[bioKey].name;
+          bioText.textContent = bios[bioKey].text;
+          popup.style.display = 'block';
+        });
+      });
+
+      // Close pop-up when 'x' is clicked
+      closeBtn.onclick = function() {
+        popup.style.display = 'none';
+      }
+
+      // Close pop-up when clicking outside of it
+      window.onclick = function(event) {
+        if (event.target == popup) {
+          popup.style.display = 'none';
+        }
+      }
+    });
+  </script>
 </Layout>
