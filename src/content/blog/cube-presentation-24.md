@@ -1,7 +1,7 @@
 ---
 title: "2024 Rubik's Cube Presentation with Jerry Yao"
 description: 'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.'
-pubDate: 'Jun 30 2024'
+pubDate: 'Jan 1 1864'
 heroImage: '/blog-placeholder-1.jpg'
 ---
 

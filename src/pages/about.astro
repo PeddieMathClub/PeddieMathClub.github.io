@@ -6,7 +6,6 @@ import Layout from '../layouts/BlogPost.astro';
 	title="About the Math Club"
 	description="Lorem ipsum dolor sit amet"
 	pubDate={new Date('Sept 10, 2024')}
-	heroImage="/blog-placeholder-1.jpg"
 >	
 	<h3>
 		Mission
@@ -24,67 +23,50 @@ import Layout from '../layouts/BlogPost.astro';
 		If you want to learn more about the organization of our club, click <a href="/constitution">here</a> to read our constitution.
 	</p>
 
-	<h3>
+	<h3 id="meetourteam">
 		Meet our Team
 	</h3>
 
 	<!-- Team Introduction Section -->
 	<div class="team-container">
-		<div class="team-member">
-			<img src="/blog-placeholder-1.jpg" alt="Person 1">
-			<h4>Jerry Liu</h4>
-			<p>President of the Math Club</p>
-			<p><a href="/bio1">Bio</a></p>
+		<div class="team-member-faculty">
+			<img class="team-member-picture" src="/gkoch.jpg" alt="Image of Mr. Koch">
+			<h4 class="officer-small-margin">Mr. Koch</h4>
+			<p class="officer-small-margin">Math Department Chair
+			<!-- <br><a href="/bio1">Read Bio</a> -->
+			</p>
 		</div>
-		<div class="team-member">
-			<img src="/blog-placeholder-2.jpg" alt="Person 2">
-			<h4>Mark Zhao</h4>
-			<p>Vice President of the Math Club</p>
-			<p><a href="/bio2">Bio</a></p>
-		</div>
-		<div class="team-member">
-			<img src="/blog-placeholder-3.jpg" alt="Person 3">
-			<h4>Jayden Li</h4>
-			<p>Secretary of the Math Club</p>
-			<p><a href="/bio3">Bio</a></p>
+		<div class="team-member-faculty">
+			<img class="team-member-picture" src="/vmontgomery.jpg" alt="Image of Mrs. Montgomery">
+			<h4 class="officer-small-margin">Mrs. Montgomery</h4>
+			<p class="officer-small-margin">Faculty Advisor
+			<!-- <br><a href="/bio2">Read Bio</a> -->
+			</p>
 		</div>
 	</div>
 
-	<!-- CSS for styling -->
-	<style>
-		.team-container {
-			display: flex; /* Use Flexbox to create side-by-side layout */
-			justify-content: space-around; /* Space out items evenly */
-			flex-wrap: wrap; /* Allow items to wrap if needed */
-			margin-top: 20px;
-		}
 
-		.team-member {
-			width: 200px; /* Set a fixed width for each member */
-			text-align: center; /* Center-align text */
-			margin: 5px;
-		}
-
-		.team-member img {
-			width: 100%; /* Make image width 100% of the container */
-			/* border-radius: 50%;*/ /* Make the image circular */
-			margin-bottom: 10px; /* Add some space below the image */
-		}
-
-		.team-member h3 {
-			margin: 2px 0; /* Adjust margin for the name */
-		}
-
-		.team-member p {
-			color: #555; /* Set a slightly muted color for the text */
-		}
-
-		/* Media query to ensure images wrap around on mobile */
-		@media (max-width: 600px) {
-			.team-container {
-				flex-direction: column; /* Stack items vertically */
-				align-items: center; /* Center-align items */
-			}
-		}
-	</style>
+	<div class="team-container">
+		<div class="team-member">
+			<img class="team-member-picture" src="/blog-placeholder-2.jpg" alt="Image of Jerry Liu">
+			<h4 class="officer-small-margin">Jerry Liu</h4>
+			<p class="officer-small-margin">President
+			<!-- <br><a href="/bio1">Read Bio</a> -->
+			</p>
+		</div>
+		<div class="team-member">
+			<img class="team-member-picture" src="/blog-placeholder-3.jpg" alt="Image of Mark Zhao">
+			<h4 class="officer-small-margin">Mark Zhao</h4>
+			<p class="officer-small-margin">Vice-President
+			<!-- <br><a href="/bio2">Read Bio</a> -->
+			</p>
+		</div>
+		<div class="team-member">
+			<img class="team-member-picture" src="/blog-placeholder-4.jpg" alt="Image of Jayden Li">
+			<h4 class="officer-small-margin">Jayden Li</h4>
+			<p class="officer-small-margin">Secretary
+			<!-- <br><a href="/bio3">Read Bio</a> -->
+			</p>
+		</div>
+	</div>
 </Layout>

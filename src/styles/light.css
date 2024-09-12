@@ -219,3 +219,61 @@ hr {
 #logoimage {
 	padding-left: 3em;
 }
+
+h4.officer-small-margin {
+	margin: 0 0 4px 0;
+	text-align: center;
+	white-space: nowrap;
+}
+
+p.officer-small-margin {
+	margin: 0 0 30px 0;
+}
+
+.team-container {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.team-member {
+	width: 200px;
+	text-align: center;
+}
+
+.team-member-faculty {
+	/* width: 200px; */
+	text-align: center;
+	white-space: nowrap;
+	display: inline-block;
+}
+
+
+.team-member-picture {
+	width: 200px;
+	margin-bottom: 10px;
+}
+
+.team-member h3 {
+	margin: 2px 0;
+	/* Adjust margin for the name */
+}
+
+.team-member p {
+	color: #555;
+	/* Set a slightly muted color for the text */
+}
+
+#meetourteam {
+	margin-bottom: 20px;
+}
+
+/* Media query to ensure images wrap around on mobile */
+@media (max-width: 600px) {
+	.team-container {
+		flex-direction: column;
+		/* Stack items vertically */
+		align-items: center;
+		/* Center-align items */
+	}
+}
