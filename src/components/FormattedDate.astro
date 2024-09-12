@@ -4,14 +4,18 @@ interface Props {
 }
 
 const { date } = Astro.props;
+let formattedDate = date.toLocaleDateString('en-us', {
+	year: 'numeric',
+	month: 'short',
+	day: 'numeric',
+})
+if (formattedDate == "Jan 1, 1864")
+	formattedDate = "Date to be determined"
+else
+	formattedDate = "Planned for " + formattedDate;
+
 ---
 
 <time datetime={date.toISOString()}>
-	{
-		date.toLocaleDateString('en-us', {
-			year: 'numeric',
-			month: 'short',
-			day: 'numeric',
-		})
-	}
+	{ formattedDate }
 </time>
