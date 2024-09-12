@@ -1,7 +1,7 @@
 ---
 title: '2024 Math Contests and Competitions'
 description: 'Every year, the Math Club and our faculty advisors organize multiple math contests for Peddie students to compete in.'
-pubDate: 'Jan 1 1864'
+pubDate: 'Jan 2 1864'
 heroImage: '/math-placeholder.jpg'
 ---
 

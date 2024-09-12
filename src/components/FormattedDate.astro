@@ -10,7 +10,9 @@ let formattedDate = date.toLocaleDateString('en-us', {
 	day: 'numeric',
 })
 if (formattedDate == "Jan 1, 1864")
-	formattedDate = "Date to be determined"
+	formattedDate = "Date to be determined";
+else if (formattedDate == "Jan 2, 1864")
+	formattedDate = "";
 else
 	formattedDate = "Planned for " + formattedDate;
 
