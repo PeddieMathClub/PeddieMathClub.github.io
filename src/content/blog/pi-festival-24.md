@@ -2,7 +2,7 @@
 title: '2024 Pi Festival'
 description: 'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.'
 pubDate: 'Jan 1 1864'
-heroImage: '/math-placeholder.jpg'
+heroImage: '/pi-day.png'
 ---
 
 Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
