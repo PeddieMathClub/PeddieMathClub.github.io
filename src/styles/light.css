@@ -69,7 +69,7 @@ h3,
 h4,
 h5,
 h6 {
-	margin: 0 0 0.5rem 0;
+	margin: 0 0 0 0;
 	color: rgb(var(--black));
 	line-height: 1.2;
 }
@@ -111,11 +111,17 @@ a:hover {
 }
 
 p {
+	margin-top: 0.2em;
 	margin-bottom: 1em;
 }
 
 .prose p {
+	margin-top: 0.2em;
 	margin-bottom: 1em;
+}
+
+ul {
+	margin: 0;
 }
 
 textarea {
