@@ -1,14 +1,14 @@
 \expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi 
 \doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-1000}{QQ2-1-1}{Preamble}}{1}\relax 
 \doTocEntry\tocsection{1}{\csname a:TocLink\endcsname{1}{x1-20001}{QQ2-1-2}{Mission}}{1}\relax 
-\doTocEntry\tocsection{2}{\csname a:TocLink\endcsname{1}{x1-30002}{QQ2-1-3}{Officers}}{1}\relax 
-\doTocEntry\tocsection{3}{\csname a:TocLink\endcsname{1}{x1-40003}{QQ2-1-4}{Appointment of the President}}{1}\relax 
+\doTocEntry\tocsection{2}{\csname a:TocLink\endcsname{1}{x1-30002}{QQ2-1-3}{Officers}}{2}\relax 
+\doTocEntry\tocsection{3}{\csname a:TocLink\endcsname{1}{x1-40003}{QQ2-1-4}{Appointment of the President}}{2}\relax 
 \doTocEntry\tocsection{4}{\csname a:TocLink\endcsname{1}{x1-50004}{QQ2-1-5}{Appointment of the Vice-President and Secretary}}{2}\relax 
 \doTocEntry\tocsection{5}{\csname a:TocLink\endcsname{1}{x1-60005}{QQ2-1-6}{Responsibilities of the President and Vice-President}}{2}\relax 
-\doTocEntry\tocsection{6}{\csname a:TocLink\endcsname{1}{x1-70006}{QQ2-1-7}{Responsibilities of the Secretary}}{2}\relax 
-\doTocEntry\tocsection{7}{\csname a:TocLink\endcsname{1}{x1-80007}{QQ2-1-8}{Dismissal of Officers}}{3}\relax 
-\doTocEntry\tocsection{8}{\csname a:TocLink\endcsname{1}{x1-90008}{QQ2-1-9}{Resignation}}{3}\relax 
-\doTocEntry\tocsection{9}{\csname a:TocLink\endcsname{1}{x1-100009}{QQ2-1-10}{Appointments Following the Removal or Resignation of Officers}}{3}\relax 
+\doTocEntry\tocsection{6}{\csname a:TocLink\endcsname{1}{x1-70006}{QQ2-1-7}{Responsibilities of the Secretary}}{3}\relax 
+\doTocEntry\tocsection{7}{\csname a:TocLink\endcsname{1}{x1-80007}{QQ2-1-8}{Dismissal of Officers}}{4}\relax 
+\doTocEntry\tocsection{8}{\csname a:TocLink\endcsname{1}{x1-90008}{QQ2-1-9}{Resignation}}{4}\relax 
+\doTocEntry\tocsection{9}{\csname a:TocLink\endcsname{1}{x1-100009}{QQ2-1-10}{Appointments Following the Removal or Resignation of Officers}}{4}\relax 
 \doTocEntry\tocsection{10}{\csname a:TocLink\endcsname{1}{x1-1100010}{QQ2-1-11}{Amendments to the Constitution}}{4}\relax 
 \doTocEntry\tocsection{11}{\csname a:TocLink\endcsname{1}{x1-1200011}{QQ2-1-12}{Licensing of this Constitution}}{4}\relax 
 \par 

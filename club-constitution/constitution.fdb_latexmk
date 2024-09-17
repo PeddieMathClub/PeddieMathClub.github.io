@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1725969765.04046 "constitution.tex" "constitution.pdf" "constitution" 1725969767.17282 0
+["pdflatex"] 1726534274.81017 "constitution.tex" "constitution.pdf" "constitution" 1726534277.05705 0
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1716849630 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1716849630 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1716849630 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -223,9 +223,9 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1716849630 41588 b43d3e860a4f94167ee1e725ff526a72 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1723612203.18008 5312047 b07fcd2a9090df96fc745b92a3db793b ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1723612032 7112997 c57622c1bc8badeaf846cf067dfd944e ""
-  "constitution.aux" 1725969766.95001 1596 b0360e0f2b104e5c0b34450e1ac8a8d4 "pdflatex"
-  "constitution.out" 1725969766.95001 2210 6cca8875f18c012b79aa185653eac8a7 "pdflatex"
-  "constitution.tex" 1725969661.03001 8413 185733584938ccba120f381375156e7b ""
+  "constitution.aux" 1726534276.85126 1596 f4063d6a628e66425ca5bc564d53e7e0 "pdflatex"
+  "constitution.out" 1726534276.85126 2210 6cca8875f18c012b79aa185653eac8a7 "pdflatex"
+  "constitution.tex" 1726534273.09464 8933 3d9930ca5a8676ea2d96a80dfc96daff ""
   (generated)
   "constitution.aux"
   "constitution.log"
