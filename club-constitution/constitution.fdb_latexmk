@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1726534274.81017 "constitution.tex" "constitution.pdf" "constitution" 1726534277.05705 0
+["pdflatex"] 1726614001.59285 "constitution.tex" "constitution.pdf" "constitution" 1726614005.89119 0
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1716849630 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1716849630 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1716849630 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -14,6 +14,7 @@
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1716849630 1512 f21f83efb36853c0b70002322c1ab3ad ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm" 1716849630 1520 eccf95517727cb11801f4f1aee3a21b4 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1716849630 1288 655e228510b4c2a1abe905c368440826 ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr17.tfm" 1716849630 1292 296a67155bdbfc32aa9c636f21e91433 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr6.tfm" 1716849630 1300 b62933e007d01cfd073f79b963c01526 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr8.tfm" 1716849630 1292 21c1c5bfeaebccffdb478fd231a0997d ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1716849630 1124 6c73e740cf17375f03eec0ee63599741 ""
@@ -223,9 +224,10 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1716849630 41588 b43d3e860a4f94167ee1e725ff526a72 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1723612203.18008 5312047 b07fcd2a9090df96fc745b92a3db793b ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1723612032 7112997 c57622c1bc8badeaf846cf067dfd944e ""
-  "constitution.aux" 1726534276.85126 1596 f4063d6a628e66425ca5bc564d53e7e0 "pdflatex"
-  "constitution.out" 1726534276.85126 2210 6cca8875f18c012b79aa185653eac8a7 "pdflatex"
-  "constitution.tex" 1726534273.09464 8933 3d9930ca5a8676ea2d96a80dfc96daff ""
+  "constitution.aux" 1726614005.70624 1596 e0521536604565e41bee9ffc6668f971 "pdflatex"
+  "constitution.out" 1726614005.70624 2210 6cca8875f18c012b79aa185653eac8a7 "pdflatex"
+  "constitution.tex" 1726614000.28627 8903 1dd5e812c95e23d9c5d5355ec649c066 ""
+  "logo.png" 1726108798.99669 482594 46575d23af3b77b99723d13d084211f1 ""
   (generated)
   "constitution.aux"
   "constitution.log"
