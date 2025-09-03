@@ -9,3 +9,4 @@ export default defineConfig({
 	site: 'https://peddiemathclub.github.io',
 	integrations: [mdx(), sitemap()],
 });
+
